@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Add"
+        android:onClick="onAddItem"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="434dp"
+
+        />
+
+    <ListView
+        android:id="@+id/lvitems"
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="0dp" />
+
+    <EditText
+        android:id="@+id/NewItem"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Addbutton"
+        android:layout_toStartOf="@+id/Addbutton"
+        android:ems="10"
+        android:hint="Add a new item here"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
